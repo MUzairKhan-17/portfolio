@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
-import herostyle from './Hero.module.css';
+import herostyle from './hero.module.css';
 import heroBg from '../../assets/images/my-image.jpg';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 

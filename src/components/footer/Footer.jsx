@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaFacebook, FaInstagram, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import styles from "../footer/footer.module.css";
+import styles from "./footer.module.css";
 
 const Footer = () => {
   return (
