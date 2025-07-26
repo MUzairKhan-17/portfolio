@@ -1,0 +1,172 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #001f1f, #003333);
+  backdrop-filter: blur(14px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  z-index: 1000;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+  font-family: 'Poppins', sans-serif;
+}
+
+/* === Logo Section === */
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoImg {
+  margin: 0 15px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.siteName {
+  font-weight: bold;
+  color: #00ffee;
+  text-shadow: 0 0 8px #00ffee;
+  font-size: large;
+}
+
+/* === Hidden Checkbox === */
+.menuToggle {
+  display: none;
+}
+
+/* === Hamburger Icon === */
+.menuIcon {
+  display: none;
+  width: 1.5rem;
+  height: 2rem;
+  margin-right: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menuIcon span {
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #00ffee;
+  border-radius: 2px;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.menuIcon span:nth-child(1) {
+  top: 0;
+}
+.menuIcon span:nth-child(2) {
+  top: 10px;
+}
+.menuIcon span:nth-child(3) {
+  top: 20px;
+}
+
+/* === X Icon (when menu checked) === */
+.menuToggle:checked ~ .menuIcon span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 10px;
+}
+.menuToggle:checked ~ .menuIcon span:nth-child(2) {
+  opacity: 0;
+}
+.menuToggle:checked ~ .menuIcon span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 10px;
+}
+
+/* === Nav Links === */
+.navLinks {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 20px;
+  position: relative;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navLink:hover {
+  color: #00ffee;
+}
+
+.active {
+  color: #00ffee;
+  font-weight: bold;
+  text-shadow: 0 0 6px #00ffee;
+}
+
+.navLinks li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: 0.3s;
+}
+
+.navLinks li a:hover,
+.navLinks li a.active {
+  color: #00ffee;
+  text-shadow: 0 0 6px #00ffee;
+}
+
+.navLinks li a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #00ffee;
+  box-shadow: 0 0 6px #00ffee;
+  transition: width 0.3s ease;
+}
+
+.navLinks li a:hover::after,
+.navLinks li a.active::after {
+  width: 100%;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .menuIcon {
+    display: block;
+  }
+
+  .navLinks {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 30, 30, 0.95);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 255, 204, 0.1);
+  }
+
+  .navLinks li {
+    padding: 7px 0;
+    width: 100%;
+  }
+
+  .menuToggle:checked ~ .navLinks {
+    max-height: 625px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

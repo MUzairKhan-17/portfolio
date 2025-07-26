@@ -1,0 +1,151 @@
+.section {
+  padding: 60px 20px;
+  margin-bottom: 80px;
+  background: linear-gradient(135deg, #001f1f, #003333);
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sectionTitle h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #00ffee;
+  text-shadow: 0 0 12px #00ffee;
+}
+
+.sectionTitle p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  text-shadow: 0 0 12px #00ffee;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Category Title Block */
+.categoryBlock {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.categoryTitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #00ffee;
+  margin-bottom: 20px;
+  padding-left: 10px;
+  border-left: 4px solid #00ffee99;
+  text-shadow: 0 0 6px #00ffee;
+}
+
+.skillsContent {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.progress {
+  background: rgba(0, 255, 255, 0.05);
+  padding: 16px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.15), inset 0 0 8px rgba(0, 255, 255, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.progress:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 30px #00ffeeaa, 0 0 15px #00ffee55;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #00ffee;
+  font-size: 1rem;
+  text-shadow: 0 0 6px #00ffee55;
+}
+
+.val {
+  color: #fff;
+  text-shadow: 0 0 3px #00ffee44;
+}
+
+.progressBarWrap {
+  background: rgba(255, 255, 255, 0.1);
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background: linear-gradient(90deg, #00ffee, #00b3b3);
+  box-shadow: 0 0 12px #00ffee99, 0 0 20px #00b3b388;
+  border-radius: 10px;
+  transition: width 1s ease-in-out;
+}
+
+/* Select Input Theme */
+.selectInput {
+  width: 100%;
+  padding: 10px 16px;
+  border-radius: 12px;
+  background-color: rgba(0, 31, 31, 0.6);
+  color: #ffffff;
+  border: 1px solid #00ffee44;
+  box-shadow: 0 0 8px #00ffee22;
+  backdrop-filter: blur(8px);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.selectInput option {
+  background-color: #001f1f;
+  color: #ffffff;
+  border-radius: 12px;
+}
+
+.selectInput:hover,
+.selectInput:focus {
+  border: 1px solid #00ffeeaa;
+  box-shadow: 0 0 12px #00ffee55;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Responsive Layout Adjustments */
+@media (max-width: 992px) {
+  .sectionTitle h2 {
+    font-size: 2rem;
+  }
+
+  .sectionTitle p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 40px 16px;
+  }
+
+  .categoryTitle {
+    font-size: 1.2rem;
+  }
+
+  .skill {
+    font-size: 0.95rem;
+  }
+
+  .val {
+    font-size: 0.9rem;
+  }
+}

@@ -1,0 +1,160 @@
+.splashContainer {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #001f1f, #003333);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  transition: opacity 1.2s ease-in-out;
+}
+
+.fadeOut {
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.logoImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  animation: fadeInImage 1.2s ease-in-out forwards;
+}
+
+.logoName {
+  font-size: 2.5rem;
+  color: #00ffee;
+  text-shadow: 0 0 12px #00ffee, 0 0 24px #00ffeeaa;
+  animation: fadeInText 1.6s ease-in-out forwards;
+  margin-top: 20px;
+}
+
+.lineText {
+  position: relative;
+  display: inline-block;
+  padding: 0 30px;
+}
+
+.lineText::before,
+.lineText::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 220px;
+  height: 2px;
+  background: #00ffee;
+  box-shadow: 0 0 12px #00ffee, 0 0 20px #00ffee66;
+  transform: translateY(-50%);
+  transition: all 0.8s ease-in-out;
+}
+
+.lineText::before {
+  left: -240px;
+}
+
+.lineText::after {
+  right: -240px;
+}
+
+@keyframes fadeInImage {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Lines Animation */
+.lineAnimations {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.horizontalLine,
+.verticalLine {
+  position: absolute;
+  background: #00ffee22;
+  box-shadow: 0 0 20px #00ffee44;
+}
+
+.horizontalLine {
+  width: 100%;
+  height: 1px;
+  top: 0;
+  animation: moveHorizontal 4s linear infinite;
+}
+
+.verticalLine {
+  width: 1px;
+  height: 100%;
+  left: 0;
+  animation: moveVertical 4s linear infinite;
+}
+
+.horizontalLine:nth-child(1) { top: 10%; animation-delay: 0s; }
+.horizontalLine:nth-child(2) { top: 30%; animation-delay: 0.5s; }
+.horizontalLine:nth-child(3) { top: 50%; animation-delay: 1s; }
+.horizontalLine:nth-child(4) { top: 70%; animation-delay: 1.5s; }
+.horizontalLine:nth-child(5) { top: 90%; animation-delay: 2s; }
+
+.verticalLine:nth-child(6) { left: 10%; animation-delay: 0s; }
+.verticalLine:nth-child(7) { left: 30%; animation-delay: 0.5s; }
+.verticalLine:nth-child(8) { left: 50%; animation-delay: 1s; }
+.verticalLine:nth-child(9) { left: 70%; animation-delay: 1.5s; }
+.verticalLine:nth-child(10) { left: 90%; animation-delay: 2s; }
+
+@keyframes moveHorizontal {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+@keyframes moveVertical {
+  0% { transform: translateY(100%); }
+  100% { transform: translateY(-100%); }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .lineText::before,
+  .lineText::after {
+    width: 60px;
+  }
+
+  .lineText::before {
+    left: -35px;
+  }
+
+  .lineText::after {
+    right: -35px;
+  }
+
+  .logoName {
+    font-size: 1.6rem;
+  }
+
+  .logoImage {
+    width: 80px;
+    height: 80px;
+  }
+}
