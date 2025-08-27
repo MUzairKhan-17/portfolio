@@ -7,6 +7,6 @@
   to = "/index.html"
   status = 200
 
-[plugins]
-  # Disable the broken 'neon' extension
+# Prevent Netlify from auto-installing Neon or broken plugins
+[[plugins]]
   package = "@netlify/plugin-functions-install-core"
