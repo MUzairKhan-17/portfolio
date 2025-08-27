@@ -222,7 +222,7 @@ em{
     flex-direction: column;
   }
 
-  .colLg6 li {
-    justify-content: center;
+  .colLg6 li{
+    justify-content: start;
   }
 }

@@ -58,7 +58,7 @@ const About = () => {
               </div>
               <div className={styles.colLg6}>
                 <ul>
-                  <li><FaChevronRight className={styles.icon} /> <strong>Education:</strong> <span>Intermediate in Science, Continue</span></li>
+                  <li><FaChevronRight className={styles.icon} /> <strong>Education:</strong> <span>Intermediate in Science</span></li>
                   <li><FaChevronRight className={styles.icon} /> <strong>Freelance:</strong> <span>Available</span></li>
                   <li><FaChevronRight className={styles.icon} /> <strong>GitHub:</strong> <span><a href="https://github.com/MUzairKhan-17" target="_blank" rel="noopener noreferrer">github.com/MUzairKhan-17</a></span></li>
                 </ul>
