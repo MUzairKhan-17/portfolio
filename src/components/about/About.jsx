@@ -51,7 +51,7 @@ const About = () => {
               <div className={styles.colLg6}>
                 <ul>
                   <li><FaChevronRight className={styles.icon} /> <strong>Name:</strong> <span>Muhammad Uzair Khan</span></li>
-                  <li><FaChevronRight className={styles.icon} /> <strong>Phone:</strong> <span>0317-1043099</span></li>
+                  <li><FaChevronRight className={styles.icon} /> <strong>Phone:</strong> <span>03171043099</span></li>
                   <li><FaChevronRight className={styles.icon} /> <strong>City:</strong> <span>Karachi, Pakistan</span></li>
                   <li><FaChevronRight className={styles.icon} /> <strong>Email:</strong> <span>uzairarif1718@gmail.com</span></li>
                 </ul>
