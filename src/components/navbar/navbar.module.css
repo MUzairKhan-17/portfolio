@@ -144,19 +144,19 @@
 
   .navLinks {
     position: absolute;
+    width: auto;
     top: 100%;
     left: 0;
     right: 0;
     background: rgba(0, 30, 30, 0.95);
     display: flex;
     flex-direction: column;
-    text-align: center;
     max-height: 0;
-    overflow: hidden;
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 255, 204, 0.1);
+    text-align: center;
   }
 
   .navLinks li {
