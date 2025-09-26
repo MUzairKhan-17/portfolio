@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import styles from './portfolio.module.css';
-import reactimage from '../../assets/images/react.jpg'
-import mernimage from '../../assets/images/mern.jpg'
-import dotnetimage from '../../assets/images/dotnet.jpg'
-import flutterimage from '../../assets/images/flutter.jpg'
+import reactimage from '/images/react.webp'
+import mernimage from '/images/mern.webp'
+import dotnetimage from '/images/dotnet.webp'
+import flutterimage from '/images/flutter.webp'
 
 const portfolioItems = [
   {

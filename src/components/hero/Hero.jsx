@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import herostyle from './hero.module.css';
-import heroBg from '../../assets/images/my-image.jpg';
+import heroBg from '/images/my-image.webp';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 const Hero = () => {

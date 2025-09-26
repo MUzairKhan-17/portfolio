@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './navbar.module.css';
-import logo from '../../assets/images/logo.png';
-import CV from '../../assets/Uzair_CV.pdf';
+import logo from '/images/logo.webp';
+import CV from '/Uzair_CV.pdf';
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('hero');

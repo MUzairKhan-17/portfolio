@@ -9,6 +9,7 @@ const skillCategories = [
     title: 'Languages',
     skills: [
       { name: 'C#', level: 90 },
+      { name: 'Python', level: 75 },
       { name: 'Dart', level: 80 },
       { name: 'JavaScript', level: 85 },
       { name: 'PHP', level: 75 },
@@ -30,6 +31,8 @@ const skillCategories = [
     skills: [
       { name: 'ASP.NET Core', level: 85 },
       { name: 'MVC', level: 80 },
+      { name: 'Flask', level: 75 },
+      { name: 'Django', level: 80 },
       { name: 'Node JS', level: 88 },
       { name: 'React.js', level: 90 },
       { name: 'Express.js', level: 87 },
@@ -45,6 +48,7 @@ const skillCategories = [
       { name: 'MongoDB', level: 85 },
       { name: 'MySQL', level: 90 },
       { name: 'SQL Server', level: 88 },
+      { name: 'SQL Server Lite', level: 74 },
       { name: 'Firebase', level: 82 },
     ],
   },

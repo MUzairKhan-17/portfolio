@@ -47,10 +47,10 @@ const Resume = () => {
             <h3 className={styles.resumeTitle}>Technical Skills</h3>
             <div className={styles.resumeItem}>
               <ul>
-                <li><strong>Languages:</strong> C#, Dart, JavaScript, PHP, SQL</li>
+                <li><strong>Languages:</strong> C#, Python, Dart, JavaScript, PHP, SQL</li>
                 <li><strong>Web Technologies:</strong> HTML5, CSS3, Bootstrap, jQuery, XML</li>
-                <li><strong>Frameworks & Tools:</strong> ASP.NET Core, MVC, Node JS, React.js, Express.js, Laravel, Flutter, Angular CLI</li>
-                <li><strong>Databases:</strong> MongoDB, MySQL, SQL Server, Firebase</li>
+                <li><strong>Frameworks & Tools:</strong> ASP.NET Core, MVC, Flask, Django, Node JS, React.js, Express.js, Laravel, Flutter, Angular CLI</li>
+                <li><strong>Databases:</strong> MongoDB, MySQL, SQL Server, SQL Server Lite, Firebase</li>
                 <li><strong>Design Tools:</strong> Adobe XD, Figma</li>
                 <li><strong>Version Control & Utilities:</strong> GitHub, MS Office</li>
               </ul>

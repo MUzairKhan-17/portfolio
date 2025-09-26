@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { FaChevronRight } from 'react-icons/fa';
 import styles from './about.module.css';
-import profileImg from '../../assets/images/my-image.jpg';
+import profileImg from '/images/my-image.webp';
 
 const About = () => {
   const sectionRef = useRef(null);

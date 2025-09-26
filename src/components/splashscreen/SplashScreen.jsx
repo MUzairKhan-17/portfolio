@@ -1,6 +1,6 @@
 import React from 'react';
 import splashcss from './splashscreen.module.css';
-import myImage from '../../assets/images/logo.png';
+import myImage from '/images/logo.webp';
 
 const SplashScreen = ({ fadeOut }) => {
   return (

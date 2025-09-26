@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("../src/assets/images/logo.png") no-repeat center center fixed;
+  background: url("../public/images/logo.webp") no-repeat center fixed;
   background-size: cover;
   font-family: 'Poppins', sans-serif;
 }
@@ -10,7 +10,7 @@ body::before {
   content: '';
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4); /* semi-transparent overlay */
+  background: rgba(0, 0, 0, 0.4);
   z-index: -1;
 }
 

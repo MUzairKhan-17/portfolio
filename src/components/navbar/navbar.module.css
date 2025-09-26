@@ -156,12 +156,12 @@
     pointer-events: none;
     transition: all 0.3s ease;
     box-shadow: 0 4px 12px rgba(0, 255, 204, 0.1);
+    padding: 0;
     text-align: center;
   }
 
-  .navLinks li {
+  .navLinks li{
     padding: 7px 0;
-    width: 100%;
   }
 
   .menuToggle:checked ~ .navLinks {
